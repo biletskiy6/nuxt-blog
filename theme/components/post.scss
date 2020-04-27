@@ -1,0 +1,75 @@
+.post {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: $bg-light-surface;
+
+  &-description {
+    flex-basis: 66.6%;
+  }
+
+  &-title {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    transition: all .25s ease;
+
+    &::after {
+      position: absolute;
+      content: " ";
+      width: 80%;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      background-color: $accent;
+      border-radius: 4px;
+      height: 3px;
+      bottom: -5px;
+      transition: all .25s ease;
+    }
+
+    &:hover {
+      transition: all .25s ease;
+
+
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        transition: all .25s ease;
+      }
+    }
+  }
+
+  &-text {
+    color: $text-light;
+  }
+
+  &-image {
+    flex-basis: 33.3%;
+
+  }
+
+  &-tags {
+    display: flex;
+  }
+
+  &-tag {
+    border: 1px solid $border-color;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+
+  }
+
+  &-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      margin-right: .2rem;
+    }
+
+
+  }
+}

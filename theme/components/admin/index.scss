@@ -1,0 +1,12 @@
+.admin {
+  display: flex;
+
+  &-aside {
+    width: 312px;
+    flex: none;
+  }
+
+  &-main {
+    flex: 1;
+  }
+}

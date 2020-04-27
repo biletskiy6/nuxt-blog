@@ -1,0 +1,20 @@
+.hero-section {
+  display: flex;
+
+  &__description {}
+
+  h1>span {
+    color: $accent;
+  }
+
+  p {
+    color: $text-light;
+  }
+
+  svg {
+    width: 400px;
+    height: 300px;
+    flex: none;
+    color: #fff;
+  }
+}
