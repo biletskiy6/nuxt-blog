@@ -21,7 +21,7 @@
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/svg": "^0.1.11",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.9",
     "sass-loader": "^8.0.2",
     "vue-svg-loader": "^0.16.0",
